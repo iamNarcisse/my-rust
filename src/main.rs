@@ -1,7 +1,9 @@
-#[path = "vectors/vectors.rs"]
-mod vectors;
+// #[path = "vectors/vectors.rs"]
+#[path = "download/download.rs"]
+mod download;
+// mod vectors;
 
 fn main() {
-    vectors::vectors();
+    // vectors::vectors();
     println!("Hello, world!");
 }
