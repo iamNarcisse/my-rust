@@ -10,10 +10,15 @@ mod variable;
 #[path = "variable/scoping.rs"]
 mod scoping;
 
+#[path = "casting/casting.rs"]
+mod casting;
+
 fn main() {
     // vectors::vectors();
 
     // variable::index();
+
+    casting::index();
     mutability::index();
     scoping::index();
     println!("Hello, world!");
