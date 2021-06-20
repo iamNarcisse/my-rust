@@ -1,6 +1,9 @@
 // Suppress all warnings from casts which overflow.
 #![allow(overflowing_literals)]
 
+#[path = "literals.rs"]
+mod literals;
+
 pub fn index() {
     let decimal = 65.2311_f32;
 
@@ -19,4 +22,6 @@ pub fn index() {
 
     // For positive numbers, this is the same as the modulus
     println!("1000 mod 256 is : {}", 1000 % 256);
+
+    literals::literals()
 }

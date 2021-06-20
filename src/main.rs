@@ -10,7 +10,7 @@ mod variable;
 #[path = "variable/scoping.rs"]
 mod scoping;
 
-#[path = "casting/casting.rs"]
+#[path = "types/casting.rs"]
 mod casting;
 
 fn main() {
