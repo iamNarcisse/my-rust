@@ -21,6 +21,9 @@ mod inference;
 #[path = "types/aliasing.rs"]
 mod aliasing;
 
+#[path = "conversion/from_into.rs"]
+mod from_into;
+
 fn main() {
     // vectors::vectors();
 
@@ -31,5 +34,8 @@ fn main() {
     scoping::index();
     inference::index();
     aliasing::index();
+
+    from_into::index();
+
     println!("Hello, world!");
 }
