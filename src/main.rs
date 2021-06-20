@@ -1,4 +1,4 @@
-use casting::index;
+// use casting::index;
 
 // #[path = "vectors/vectors.rs"]
 
@@ -18,6 +18,9 @@ mod casting;
 #[path = "inference/inference.rs"]
 mod inference;
 
+#[path = "types/aliasing.rs"]
+mod aliasing;
+
 fn main() {
     // vectors::vectors();
 
@@ -27,5 +30,6 @@ fn main() {
     mutability::index();
     scoping::index();
     inference::index();
+    aliasing::index();
     println!("Hello, world!");
 }
