@@ -1,3 +1,5 @@
+use casting::index;
+
 // #[path = "vectors/vectors.rs"]
 
 #[path = "download/download.rs"]
@@ -13,6 +15,9 @@ mod scoping;
 #[path = "types/casting.rs"]
 mod casting;
 
+#[path = "inference/inference.rs"]
+mod inference;
+
 fn main() {
     // vectors::vectors();
 
@@ -21,5 +26,6 @@ fn main() {
     casting::index();
     mutability::index();
     scoping::index();
+    inference::index();
     println!("Hello, world!");
 }
