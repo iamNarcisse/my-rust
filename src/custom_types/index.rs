@@ -19,6 +19,7 @@ struct Point {
     y: f32,
 }
 
+#[derive(Debug)]
 // Structs can be reused as fields of another struct
 #[allow(dead_code)]
 struct Rectangle {
@@ -62,4 +63,17 @@ pub fn index() {
     let Pair(integer, decimal) = pair;
 
     println!("=======>{} ====> {}", integer, decimal);
+
+    let result = square(point, 10.0, 5.0);
+
+    println!("{:?}", result)
+}
+
+fn square(point: Point, top: f32, bottom: f32) -> Rectangle {
+    let result: Rectangle = Rectangle {
+        top_left: Point { ..point },
+        bottom_right: Point { y: top, x: bottom },
+    };
+
+    result
 }
