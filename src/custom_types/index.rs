@@ -35,7 +35,7 @@ pub fn index() {
 
     println!("{:?}", peter);
 
-    let point: Point = Point { x: 10.3, y: 0.4 };
+    let point: Point = Point { x: 10.3, y: 2.4 };
 
     println!("Point coordinates: ({}, {})", point.x, point.y);
 
@@ -66,7 +66,11 @@ pub fn index() {
 
     let result = square(point, 10.0, 5.0);
 
-    println!("{:?}", result)
+    println!("{:?}", result);
+
+    let area = rect_area(_rectange);
+
+    println!("AREA =====>{:?}", area);
 }
 
 fn square(point: Point, top: f32, bottom: f32) -> Rectangle {
@@ -76,4 +80,17 @@ fn square(point: Point, top: f32, bottom: f32) -> Rectangle {
     };
 
     result
+}
+
+fn rect_area(rectange: Rectangle) -> f32 {
+    // l * b
+    let Rectangle {
+        top_left: Point { x, y },
+        bottom_right: Point { x: x1, y: y1 },
+    } = rectange;
+
+    let width = x1 - x;
+    let height = y1 - y;
+
+    height * width
 }
