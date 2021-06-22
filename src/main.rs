@@ -24,6 +24,9 @@ mod aliasing;
 #[path = "conversion/from_into.rs"]
 mod from_into;
 
+#[path = "flow_control/index.rs"]
+mod flow_control;
+
 fn main() {
     // vectors::vectors();
 
@@ -34,8 +37,7 @@ fn main() {
     scoping::index();
     inference::index();
     aliasing::index();
-
-    from_into::index();
+    flow_control::index();
 
     println!("Hello, world!");
 }
