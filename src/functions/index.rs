@@ -78,6 +78,25 @@ impl Rectangle {
     }
 }
 
+fn closures() {
+    fn function(i: i32) -> i32 {
+        i + 1
+    }
+
+    let closure_annotated = |i: i32| -> i32 { i + 1 };
+
+    let closure_inferred = |i: i32| i + 1;
+
+    let i = 2;
+
+    println!("function: {}", function(i));
+    println!("closure annotated: {}", closure_annotated(i));
+    println!("closure inferred: {}", closure_inferred(i));
+
+    let one = || 1;
+
+    println!("closure returning one: {}", one())
+}
 pub fn main() {
     fizz_buzz(12);
 
@@ -93,5 +112,7 @@ pub fn main() {
     println!("Perimeter of a circle {} ", circle.perimeter());
 
     println!("=======> {}", rectangle.perimeter());
-    println!("Area of rectangle =======> {}", rectangle.area())
+    println!("Area of rectangle =======> {}", rectangle.area());
+
+    closures();
 }
