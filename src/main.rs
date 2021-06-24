@@ -30,6 +30,9 @@ mod flow_control;
 #[path = "custom_types/index.rs"]
 mod custom_types;
 
+#[path = "functions/index.rs"]
+mod functions;
+
 fn main() {
     // vectors::vectors();
 
@@ -42,6 +45,7 @@ fn main() {
     aliasing::index();
     flow_control::index();
     custom_types::index();
+    functions::main();
 
     println!("Hello, world!");
 }
