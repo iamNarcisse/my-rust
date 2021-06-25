@@ -33,6 +33,9 @@ mod custom_types;
 #[path = "functions/index.rs"]
 mod functions;
 
+#[path = "error_handling/index.rs"]
+mod error_handling;
+
 fn main() {
     // vectors::vectors();
 
@@ -46,6 +49,7 @@ fn main() {
     flow_control::index();
     custom_types::index();
     functions::main();
+    error_handling::main();
 
     println!("Hello, world!");
 }
