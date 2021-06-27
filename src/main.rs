@@ -36,6 +36,9 @@ mod functions;
 #[path = "error_handling/index.rs"]
 mod error_handling;
 
+#[path = "error_handling/combinators.rs"]
+mod combinators;
+
 fn main() {
     // vectors::vectors();
 
@@ -50,6 +53,7 @@ fn main() {
     // custom_types::index();
     // functions::main();
     error_handling::main();
+    combinators::combinators();
 
     println!("Hello, world!");
 }
