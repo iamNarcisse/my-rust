@@ -41,14 +41,14 @@ fn main() {
 
     // variable::index();
 
-    casting::index();
-    mutability::index();
-    scoping::index();
-    inference::index();
-    aliasing::index();
-    flow_control::index();
-    custom_types::index();
-    functions::main();
+    // casting::index();
+    // mutability::index();
+    // scoping::index();
+    // inference::index();
+    // aliasing::index();
+    // flow_control::index();
+    // custom_types::index();
+    // functions::main();
     error_handling::main();
 
     println!("Hello, world!");
