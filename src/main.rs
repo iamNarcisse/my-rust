@@ -39,6 +39,11 @@ mod error_handling;
 #[path = "error_handling/combinators.rs"]
 mod combinators;
 
+#[path = "all_tests/index.rs"]
+mod all_tests;
+
+
+
 fn main() {
     // vectors::vectors();
 
@@ -53,6 +58,8 @@ fn main() {
     // custom_types::index();
     // functions::main();
     error_handling::main();
+
+    all_tests::add_numbers(1, 2);
     combinators::combinators();
 
     println!("Hello, world!");
